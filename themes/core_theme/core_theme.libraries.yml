@@ -1,0 +1,229 @@
+# # These lines define the core_theme/global library.
+global:
+  js:
+    bower_components/lodash/lodash.js: {}
+    bower_components/bouncefix.js/dist/bouncefix.js: {}
+    dist/js/common.js: {}
+    dist/drupal-js-libraries/navigation.js: {}
+
+  css:
+    # The SMACSS category, "base", is loaded before other categories. Drupal 8
+    # loads stylesheets based on the SMACSS ordering of:
+    # base, layout, component, state, theme
+    base:
+      http://fast.fonts.net/cssapi/69fdb849-9596-41e2-bfcd-fbef96cc9216.css: { type: external }
+    component:
+      dist/css/main.css: {}
+
+  # [FS] NOTE: videojs-youtube modal, modal-tout
+  # declared as globally to guarantee
+  # the transporter to refresh those via
+  # Drupal behaviors
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/picturefill
+    - core_theme/clamp-js
+    - core_theme/videojs-youtube
+    - core_theme/map
+    - core_theme/highcharts
+    - core_theme/image-parallax
+    - core_theme/modal-tout
+    - core_theme/page-animator
+
+breadcrumb-navigation:
+  js:
+    dist/drupal-js-libraries/breadcrumb-navigation.js: {}
+  dependencies:
+    - core_theme/tweenlite
+
+clamp-js:
+  js:
+    bower_components/clamp-js/clamp.js: {}
+
+# Override Drupal native jquery to use latest version from bower
+jquery:
+  remote: https://github.com/jquery/jquery
+  version: "3.1.0"
+  license:
+    url: https://github.com/jquery/jquery/blob/3.1.0/LICENSE.txt
+    gpl-compatible: true
+  js:
+    bower_components/jquery/dist/jquery.min.js: { minified: true, weight: -20 }
+
+clipboard:
+  js:
+    bower_components/clipboard/dist/clipboard.js: {}
+
+glossary:
+  js:
+    dist/drupal-js-libraries/glossary.js: {}
+  dependencies:
+    - core_theme/qtip
+
+highlight-to-share:
+  js:
+    dist/drupal-js-libraries/highlight-to-share.js: {}
+  dependencies:
+    - core_theme/qtip
+
+page-animator:
+  js:
+    dist/drupal-js-libraries/page-animator.js: {}
+  dependencies:
+    - core_theme/tweenmax
+    - core_theme/scrollmagic
+
+scrollmagic:
+  js:
+    bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js: {}
+    bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js: {}
+    bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js: {}
+
+share-kit:
+  js:
+    dist/drupal-js-libraries/share-kit.js: {}
+
+slick:
+  js:
+    bower_components/slick-carousel/slick/slick.js: {}
+  css:
+    layout:
+      bower_components/slick-carousel/slick/slick.css: {}
+      bower_components/slick-carousel/slick/slick-theme.css: {}
+
+qtip:
+  css:
+    layout:
+      bower_components/qtip2-main/src/basic.css: {}
+      bower_components/qtip2-main/src/core.css: {}
+      bower_components/qtip2-main/src/tips/tips.css: {}
+  js:
+    bower_components/qtip2-main/dist/jquery.qtip.js: {}
+  dependencies:
+    - core/jquery
+
+tweenmax:
+  js:
+    bower_components/gsap/src/uncompressed/TweenMax.js: {}
+
+tweenlite:
+  js:
+    bower_components/gsap/src/uncompressed/TweenLite.js: {}
+    bower_components/gsap/src/uncompressed/plugins/CSSPlugin.js: {}
+    bower_components/gsap/src/uncompressed/plugins/ScrollToPlugin.js: {}
+    bower_components/gsap/src/uncompressed/easing/EasePack.js: {}
+
+transporter:
+  js:
+    dist/drupal-js-libraries/transporter.js: {}
+  dependencies:
+    - core_theme/waypoints
+
+waypoints:
+  js:
+    bower_components/waypoints/lib/noframework.waypoints.js: {}
+    bower_components/waypoints/lib/shortcuts/inview.js: {}
+
+videojs:
+  js:
+    bower_components/video.js/dist/video.js: {}
+  dependencies:
+    - core/jquery
+
+videojs-youtube:
+  js:
+    bower_components/videojs-youtube/dist/Youtube.js: {}
+    dist/drupal-js-libraries/video-player.js: {}
+  dependencies:
+    - core_theme/videojs
+
+map:
+  css:
+    component:
+      bower_components/cartodb.js/themes/css/cartodb.css: {}
+  js:
+    dist/drupal-js-libraries/map.js: {}
+  dependencies:
+    - core_theme/cartodb
+    
+cartodb:
+  css:
+    component:
+      bower_components/cartodb.js/themes/css/cartodb.css: {}
+  js:
+    bower_components/cartodb.js/cartodb.js: {}
+
+modal:
+  js:
+    dist/drupal-js-libraries/modal.js: {}
+
+modal-tout:
+  js:
+    dist/drupal-js-libraries/modal-tout.js: {}
+
+highcharts:
+  js:
+    # [FS] NOTE: Disable Highcharts source loading
+    # because already loaded by the EasyChart embed code
+    bower_components/highcharts/highcharts.src.js: {}
+    dist/drupal-js-libraries/highchart-cfr-theme.js: {}
+
+timeline:
+  js:
+    src/scripts/vendors/modernzr-object-fit.js: {}
+    src/scripts/vendors/ofi.browser.js: {}
+    dist/drupal-js-libraries/timeline.js: {}
+
+slideshow:
+  js:
+    dist/drupal-js-libraries/slideshow.js: {}
+    bower_components/magnific-popup/dist/jquery.magnific-popup.js: {}
+  css:
+    component:
+      bower_components/magnific-popup/dist/magnific-popup.css: {}
+  dependencies:
+    - core_theme/slick
+
+page-header-collapsed:
+  js:
+    dist/drupal-js-libraries/page-header-collapsed.js: {}
+
+assign-overlay:
+  js:
+    dist/drupal-js-libraries/assign-overlay.js: {}
+  dependencies:
+    - core_theme/clipboard
+    - core_theme/tweenlite
+
+about-page-faq:
+  js:
+    dist/drupal-js-libraries/about-page-faq.js: {}
+
+# videojs-transcript:
+#   js:
+#     src/scripts/vendors/videojs-transcript.js: {}
+#   dependencies:
+#     - core_theme/videojs
+
+# Example external library.
+# webfonts:
+#   version: 1.x
+#   js:
+#     https://fast.fonts.net/example.js: { type: external, attributes: { async: true }}
+
+# Attach each library by using attach_library() within the components twig template.
+# More info: https://www.drupal.org/node/2456753
+
+# Example component library.
+# site-logo:
+#   css:
+#     component:
+#       dist/css/site-logo.css: {}
+#   # If this library had JavaScript you could specify it like this:
+#   js:
+#     js/script.js: {}
+#   # If this library had dependencies on other libraries, you could specify it like this:
+#   dependencies:
+#     - core_theme/clearfix
+#     - core_theme/visually-hidden

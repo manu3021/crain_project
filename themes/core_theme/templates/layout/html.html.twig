@@ -1,0 +1,144 @@
+{#
+/**
+ * @file
+ * Theme override for the basic structure of a single Drupal page.
+ *
+ * Variables:
+ * - logged_in: A flag indicating if user is logged in.
+ * - root_path: The root path of the current page (e.g., node, admin, user).
+ * - node_type: The content type for the current node, if the page is a node.
+ * - head_title: List of text elements that make up the head_title variable.
+ *   May contain one or more of the following:
+ *   - title: The title of the page.
+ *   - name: The name of the site.
+ *   - slogan: The slogan of the site.
+ * - page_top: Initial rendered markup. This should be printed before 'page'.
+ * - page: The rendered page markup.
+ * - page_bottom: Closing rendered markup. This variable should be printed after
+ *   'page'.
+ * - db_offline: A flag indicating if the database is offline.
+ * - placeholder_token: The token for generating head, css, js and js-bottom
+ *   placeholders.
+ *
+ * @see template_preprocess_html()
+ */
+#}
+{%
+  set body_classes = [
+    logged_in ? 'user-logged-in',
+    not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
+    node_type ? 'page-node-type-' ~ node_type|clean_class,
+    db_offline ? 'db-offline',
+  ]
+%}
+
+<!DOCTYPE html>
+<html{{ html_attributes }}>
+  <head>
+    <head-placeholder token="{{ placeholder_token }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token }}">
+    <js-placeholder token="{{ placeholder_token }}">
+
+    {% if cfr_omniture_status == 1 %}
+    <!-- Omniture Analytics -->
+      {{ omniture_header|raw }}
+    <!-- End Omniture Analytics -->
+    {% endif %}
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KFS3NQ');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Dynamic Tag Manager -->
+    <script type="text/javascript">
+      var head = document.getElementsByTagName('head')[0];
+      var dtm_script = document.createElement('script');
+      dtm_script.type = 'text/javascript';
+      if ( /world101\.cfr\.org/.test(window.location.href) ) {
+        dtm_script.src = '//assets.adobedtm.com/3770361961cb38848c89b2035dd10f23793d2432/satelliteLib-44c693bb509c60f8e982001c5e8c80825ee5fad0.js';
+      } else {
+        dtm_script.src = '//assets.adobedtm.com/3770361961cb38848c89b2035dd10f23793d2432/satelliteLib-44c693bb509c60f8e982001c5e8c80825ee5fad0-staging.js';
+      }
+      head.appendChild(dtm_script);
+    </script>
+    <!-- End Dynamic Tag Manager -->
+
+  </head>
+  <body{{ attributes.addClass(body_classes) }}>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFS3NQ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {#
+      Keyboard navigation/accessibility link to main content section in
+      page.html.twig.
+    #}
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      {{ 'Skip to main content'|t }}
+    </a>
+    {{ page_top }}
+    {{ page }}
+    {{ page_bottom }}
+    <js-bottom-placeholder token="{{ placeholder_token }}">
+
+
+    <div class="glossary-drawer">
+      <div class="glossary-drawer__scrollable">
+        <div class="glossary-drawer__content">
+          <dl class="glossary-def">
+            <dt class="glossary-def__term"></dt>
+            <dd class="glossary-def__definition"></dd>
+          </dl>
+        </div>
+      </div>
+      <div class="glossary-drawer__close">
+        {{ symbols.add('link', 'close') }}
+      </div>
+    </div>
+
+    <!-- Dynamic Tag Manager -->
+    <script type="text/javascript">
+      $(dtm_script).on("load", function(event) {
+        _satellite.pageBottom();
+      });
+    </script>
+    <!-- End Dynamic Tag Manager -->
+
+    {% if cfr_omniture_status == 1 %}
+      <!-- Omniture Analytics -->
+      {{ omniture_footer|raw }}
+      <!-- End Omniture Analytics -->
+    {% endif %}
+
+    <!-- ChartBeat Analytics -->
+    {% if cfr_chartbeat_status != 0 %}
+      <script type='text/javascript'>
+        var _sf_async_config={};
+        /** CONFIGURATION START **/
+        _sf_async_config.uid = {{ cfr_chartbeat_uid }};
+        _sf_async_config.domain = {{ cfr_chartbeat_domain }};
+        _sf_async_config.useCanonical = {{ cfr_chartbeat_use_canonical }};
+        /** CONFIGURATION END **/
+        (function(){
+          function loadChartbeat() {
+            window._sf_endpt=(new Date()).getTime();
+            var e = document.createElement('script');
+            e.setAttribute('language', 'javascript');
+            e.setAttribute('type', 'text/javascript');
+            e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+            document.body.appendChild(e);
+          }
+          var oldonload = window.onload;
+          window.onload = (typeof window.onload != 'function') ?
+            loadChartbeat : function() { oldonload(); loadChartbeat(); };
+        })();
+      </script>
+      <!-- End ChartBeat Analytics -->
+    {% endif %}
+  </body>
+</html>

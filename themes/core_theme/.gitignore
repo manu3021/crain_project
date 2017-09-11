@@ -1,0 +1,9 @@
+# Ignore vendors and built paths
+bower_components/
+node_modules/
+dist/
+
+# Ignore log, temp, etc files
+*.css.map
+.sass-cache
+npm-debug.log
