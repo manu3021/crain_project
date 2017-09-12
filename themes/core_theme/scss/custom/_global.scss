@@ -1,0 +1,27 @@
+// example code
+.content-width {
+  margin: auto;
+  display: inline-block;
+  width: auto;
+  li {
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+    a {
+      color: #ff2632;
+      text-transform: uppercase;
+      text-align: left !important;
+      letter-spacing: 1.5px;
+      padding: 6px 0 4px 10px;
+      text-decoration: none;
+      position: relative;
+      z-index: 20;
+      display: inline-block;
+      height: 42px;
+      font-size: 13px;
+      line-height: 24px;
+      font-weight: bold;
+    }
+  }
+}
+
