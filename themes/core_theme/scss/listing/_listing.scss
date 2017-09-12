@@ -1,0 +1,34 @@
+// Listing
+//
+// Markup:
+// <div class="listing-rows">
+//	<div class="left-col"></div>
+//	<div class="image"></div>
+//	<div class="right-col">
+//	<div class="category">Nomination Open</div>
+//	<h2>Fast 50: Southeast Michigan's Faster Growing Campanies.</h2>
+//	<div class="desc">Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod </div>
+//</div>
+//</div>
+//
+// Style guide: listing
+
+
+.listing-rows {
+	display: flex;
+	.left-col {
+		width: 200px;
+    	height: 200px;
+    	background: gray;
+    	display: flex;
+    	margin-right: 15px;
+	}
+	.right-col {
+
+	}
+}
+
+.category {
+	color: $red;
+	text-transform: uppercase;
+}
