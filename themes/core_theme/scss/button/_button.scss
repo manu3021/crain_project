@@ -11,9 +11,10 @@
  padding: 10px;
  display: inline-block;
  text-decoration: none;
-
+ border: none;
+ outline: none;
  &.button-red {
-    background: $button-red;
+    background: $red;
     &:hover {
       background: $black;
     }

@@ -1,0 +1,61 @@
+// Pager
+//
+// Markup:
+// <ul class="pager__items js-pager__items">
+//    <li class="pager__item pager__item--previous">
+//       <a href="?page=2" title="Go to previous page" rel="prev">
+//         <span class="visually-hidden">Previous page</span>
+//         <span aria-hidden="true">&lt; PREV</span>
+//       </a>
+//    </li>
+//    <li class="pager__item is-active">
+//      <a href="?page=1" title="Go to page 9">
+//      <span class="visually-hidden">Page</span>
+//        1
+//      </a>
+//    </li>
+//    <li class="pager__item">
+//      <a href="?page=2" title="Go to page 9">
+//      <span class="visually-hidden">Page</span>
+//        2
+//      </a>
+//    </li>
+//    <li class="pager__item pager__item--next">
+//      <a href="?page=4" title="Go to next page" rel="next">
+//        <span class="visually-hidden">Next page</span>
+//        <span aria-hidden="true">NEXT &gt;</span>
+//      </a>
+//    </li>
+// </ul>
+//
+// Style guide: Pager
+.pager__items {
+  clear: both;
+  text-align: center;
+  .pager__item {
+    display: inline;
+    padding: 0.5em;
+    a {
+      background-color: transparent;
+      text-decoration: none;
+      color: $black;
+      &:hover {
+        color: $gray;
+      }
+    }
+    &.is-active {
+      a {
+        text-decoration: underline;
+        color: $red;
+      }
+    }
+  }
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px,1px,1px,1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
