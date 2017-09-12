@@ -1,0 +1,31 @@
+// kss style for color
+@import "variable/variable";
+
+.kss-description {
+   hr {
+    height: 20px !important;
+    font-weight: bold;
+    margin-bottom: 5px !important;
+    &.one {
+      background: $white;
+    }
+    &.two {
+      background: $black;
+    }
+    &.three {
+      background: $red;
+    }
+    &.four {
+      background: $gray;
+    }
+    &.five {
+      background: $drak-red;
+    }
+    &.six {
+      background: $yellow;
+    }
+    &.seven {
+      background: $drak-yellow;
+    }
+  }
+}

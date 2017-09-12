@@ -1,0 +1,20 @@
+.kss-description hr {
+  height: 20px !important;
+  font-weight: bold;
+  margin-bottom: 5px !important; }
+  .kss-description hr.one {
+    background: #fff; }
+  .kss-description hr.two {
+    background: #000; }
+  .kss-description hr.three {
+    background: #982329; }
+  .kss-description hr.four {
+    background: #808080; }
+  .kss-description hr.five {
+    background: #8d2725; }
+  .kss-description hr.six {
+    background: #ff8f0d; }
+  .kss-description hr.seven {
+    background: #d77300; }
+
+/*# sourceMappingURL=styleguide.css.map */
