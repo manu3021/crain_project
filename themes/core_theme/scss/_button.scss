@@ -1,0 +1,18 @@
+// Button
+//
+// Markup:
+// <a href= "#" class="button">Button</a>
+//
+// Style guide: base.links
+
+.button {
+ background: red;
+ border-radius: 5px;
+ color: white;
+ padding: 10px;
+ display: inline-block;
+ text-decoration: none;
+ &:hover {
+   background: blue;
+ }
+}
