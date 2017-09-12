@@ -13,7 +13,7 @@ global:
     base:
       http://fast.fonts.net/cssapi/69fdb849-9596-41e2-bfcd-fbef96cc9216.css: { type: external }
     component:
-      dist/css/main.css: {}
+      css/style.css: {}
 
   # [FS] NOTE: videojs-youtube modal, modal-tout
   # declared as globally to guarantee
@@ -146,7 +146,7 @@ map:
     dist/drupal-js-libraries/map.js: {}
   dependencies:
     - core_theme/cartodb
-    
+
 cartodb:
   css:
     component:

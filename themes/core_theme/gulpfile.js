@@ -49,7 +49,7 @@ gulp.task('browserSync', function() {
   browserSync.init({
     files: files,
     injectChanges: true,
-    proxy: "dev.vodafone.com",
+    proxy: "local",
     online: true
   });
 });
@@ -111,7 +111,7 @@ gulp.task('styleguide', function(){
     title: 'Core theme Styleguide',
     source: paths.styles.source,
     destination: paths.styleGuide,
-    homepage: 'readme.md',
+    homepage: 'README.md',
     css: css
     });
 });
