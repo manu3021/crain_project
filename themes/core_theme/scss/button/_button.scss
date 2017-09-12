@@ -1,22 +1,37 @@
 // Button
 //
 // Markup:
-// <button class="btn button-red">Button</button>
+// city books : <button class="btn button-red">Button</button>
+// Auto order : <button class="btn button-yellow">Button</button>
 //
 // Style guide: button
 
 .btn {
- border-radius: 5px;
- color: $white;
- padding: 10px;
- display: inline-block;
- text-decoration: none;
- border: none;
- outline: none;
- &.button-red {
+  border: 0;
+  border-radius: 4px;
+  color: $white;
+  display: inline-block;
+  outline: none;
+  padding: 14px;
+  text-decoration: none;
+
+  &:active {
+    box-shadow: 0 0 3px $black;
+  }
+
+  &.button-red {
     background: $red;
+
     &:hover {
-      background: $black;
+      background: $drak-red;
     }
- }
+  }
+
+  &.button-yellow {
+    background: $yellow;
+
+    &:hover {
+      background: $drak-yellow;
+    }
+  }
 }

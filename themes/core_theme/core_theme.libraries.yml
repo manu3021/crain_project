@@ -13,6 +13,7 @@ global:
     base:
       http://fast.fonts.net/cssapi/69fdb849-9596-41e2-bfcd-fbef96cc9216.css: { type: external }
     component:
+      css/styleguide.css: {}
       css/style.css: {}
 
   # [FS] NOTE: videojs-youtube modal, modal-tout

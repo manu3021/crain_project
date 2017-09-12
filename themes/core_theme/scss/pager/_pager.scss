@@ -29,33 +29,40 @@
 // </ul>
 //
 // Style guide: Pager
+
 .pager__items {
   clear: both;
   text-align: center;
+
   .pager__item {
     display: inline;
-    padding: 0.5em;
+    padding: .5em;
+
     a {
       background-color: transparent;
-      text-decoration: none;
       color: $black;
+      text-decoration: none;
+
       &:hover {
         color: $gray;
       }
     }
+
     &.is-active {
+
       a {
-        text-decoration: underline;
         color: $red;
+        text-decoration: underline;
       }
     }
   }
 }
+
 .visually-hidden {
-  position: absolute;
-  clip: rect(1px,1px,1px,1px);
-  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
+  overflow: hidden;
+  position: absolute;
   width: 1px;
   word-wrap: normal;
 }
