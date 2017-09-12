@@ -1,0 +1,12 @@
+.btn {
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none; }
+  .btn.button-red {
+    background: #982329; }
+    .btn.button-red:hover {
+      background: #000000; }
+
+/*# sourceMappingURL=style.css.map */

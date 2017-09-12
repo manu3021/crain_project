@@ -27,14 +27,61 @@
         </a>
       </li>
       <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-base.html">
-          <span class="kss-nav__ref">1</span><span class="kss-nav__name">base</span>
+        <a class="kss-nav__menu-link" href="section-button.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Button</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-variable.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Variables</span>
         </a>
       </li>
     </ul>
   </nav>
 </div>
 <article role="main" class="kss-main">
+    <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
+      <h2 id="getting-started">Getting Started</h2>
+<p>If you haven&#39;t yet, install nvm:
+<a href="https://github.com/creationix/nvm">https://github.com/creationix/nvm</a></p>
+<h3 id="run-the-following-commands-from-the-theme-directory">Run the following commands from the theme directory</h3>
+<h4 id="use-the-right-version-of-node-with-">Use the right version of node with:</h4>
+<p><code>nvm use</code></p>
+<p><em>This command will look at your <code>.nvmrc</code> file and use the version node.js specified in it. This ensures all developers use the same version of node for consistency.</em></p>
+<h4 id="if-that-version-of-node-isn-t-installed-install-it-with-">If that version of node isn&#39;t installed, install it with:</h4>
+<p><code>nvm install</code></p>
+<h4 id="install-npm-dependencies-with">Install npm dependencies with</h4>
+<p><code>npm install</code></p>
+<p><em>This command looks at <code>package.json</code> and installs all the npm dependencies specified in it.  Some of the dependencies include gulp, autoprefixer, gulp-sass and others.</em></p>
+<h4 id="install-bower-globally">Install bower globally</h4>
+<p><code>npm install -g bower</code>  </p>
+<h4 id="install-bower-dependencies-with">Install bower dependencies with</h4>
+<p><code>bower install</code></p>
+<p><em>This command installs all the JavaScript libraries necessary.</em></p>
+<h4 id="runs-default-task">Runs default task</h4>
+<p><code>npm run build</code></p>
+<p><em>This will run whatever the default task is.</em></p>
+<h4 id="compiles-sass">Compiles Sass</h4>
+<p><code>npm run compile</code></p>
+<p><em>This will perform a one-time Sass compilation.</em></p>
+<h4 id="runs-the-watch-command">Runs the watch command</h4>
+<p><code>npm run watch</code></p>
+<p><em>This is ideal when you are doing a lot of Sass changes and you want to make sure every time a change is saved it automatically gets compiled to CSS</em></p>
+<h4 id="cleans-complied-directory">Cleans complied directory</h4>
+<p><code>npm run clean</code></p>
+<p><em>This will perform a one-time deletion of all compiled files within the dist/ directory.</em></p>
+<h2 id="developer-workflow">Developer Workflow</h2>
+<p><code>cd</code> to _/web/themes/custom/world101<em>theme</em> this will be where you run all your <code>npm</code> commands from. Use <code>npm run watch</code> to auto recompile the style-guide when you make changes to js, scss, or twig files.</p>
+<blockquote>
+<p>Note: If you make a change to the KSS builder files, or add icons and do not see your changes automatically update try running <code>npm run clean &amp;&amp; npm run build</code></p>
+</blockquote>
+<p>All SASS files should live under one of the folders in <em>src/styles</em>. Styles specific to a components should live under <em>src/styles/components</em> with a name that matches the component.</p>
+<p>For the time being all .twig and .json files will live under the components folder with a directory specific to the name of the component. If you find yourself re-using markup or building full pages that aren&#39;t necessarily components there is a <em>src/templates</em> that can also be used to store .twig files.</p>
+<blockquote>
+<p>Note: When you add new components that require data from a json file make sure to stop your watch task and re-run it for gulp to be aware of the new json.</p>
+</blockquote>
+
+    </div>
 </article>
 
 <!-- SCRIPTS -->

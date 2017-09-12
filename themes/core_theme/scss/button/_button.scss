@@ -1,0 +1,21 @@
+// Button
+//
+// Markup:
+// <button class="btn button-red">Button</button>
+//
+// Style guide: button
+
+.btn {
+ border-radius: 5px;
+ color: $white;
+ padding: 10px;
+ display: inline-block;
+ text-decoration: none;
+
+ &.button-red {
+    background: $button-red;
+    &:hover {
+      background: $black;
+    }
+ }
+}
