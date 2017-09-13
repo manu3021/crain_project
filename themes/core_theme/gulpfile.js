@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     autoprefixer = require('autoprefixer'),
     kss = require('kss'),
     loadPlugins = require('gulp-load-plugins')(),
-    browserSync = require('browser-sync').create(),
+    //browserSync = require('browser-sync').create(),
     fontAwesome = require('node-font-awesome');
 
 var paths = {
@@ -37,22 +37,22 @@ var handleError = function (task) {
 };
 
 // Task for the browserSync
-gulp.task('browserSync', function() {
-  //watch files
-  loadPlugins.util.log(loadPlugins.util.colors.yellow('BrowserSync starting'));
-  var files = [
-    paths.styles.destination + '**/*.css',
-    paths.scripts + '**/*.js',
-    paths.images + '**/*',
-    paths.templates + '**/*.twig'
-  ];
-  browserSync.init({
-    files: files,
-    injectChanges: true,
-    proxy: "local",
-    online: true
-  });
-});
+// gulp.task('browserSync', function() {
+//   //watch files
+//   loadPlugins.util.log(loadPlugins.util.colors.yellow('BrowserSync starting'));
+//   var files = [
+//     paths.styles.destination + '**/*.css',
+//     paths.scripts + '**/*.js',
+//     paths.images + '**/*',
+//     paths.templates + '**/*.twig'
+//   ];
+//   browserSync.init({
+//     files: files,
+//     injectChanges: true,
+//     proxy: "local",
+//     online: true
+//   });
+// });
 
 //Task to compile the sass, linting, sourcemaps
 gulp.task('sass', function() {
@@ -75,9 +75,6 @@ gulp.task('sass', function() {
   .pipe(loadPlugins.postcss(plugins))
   .pipe(loadPlugins.sourcemaps.write('.'))
   .pipe(gulp.dest(paths.styles.destination))
-  .pipe(browserSync.reload({
-    stream: true
-  }))
 });
 
 // Task to lint the JS
@@ -118,10 +115,10 @@ gulp.task('styleguide', function(){
 });
 
 // Watch Task
-gulp.task('watch', ['sass',  'browserSync'], function (){
+gulp.task('watch', ['sass'], function (){
   gulp.watch(paths.styles.source + '**/*.scss', ['sass']);
   gulp.watch(paths.scripts + '**/*.js', ['lint']);
-  gulp.watch(paths.templates + '**/*.twig', browserSync.reload);
+  gulp.watch(paths.templates + '**/*.twig');
 })
 
 // Task to test the CSS

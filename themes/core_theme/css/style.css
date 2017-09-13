@@ -1694,6 +1694,27 @@
     .btn.button-yellow:hover {
       background: #d77300; }
 
+h1 {
+  font-size: 45px; }
+
+h2 {
+  font-size: 38px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 20px; }
+
+h5 {
+  font-size: 18px; }
+
+p {
+  font-size: 18px; }
+
+a {
+  font-size: 14px; }
+
 .pager__items {
   clear: both;
   text-align: center; }
