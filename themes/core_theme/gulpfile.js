@@ -16,7 +16,7 @@ var paths = {
   scripts: 'js/',
   images: 'images/',
   styleGuide: 'styleguide',
-  templates: 'templates/'
+  templates: 'templates/' 
 };
 
 // error notifications
