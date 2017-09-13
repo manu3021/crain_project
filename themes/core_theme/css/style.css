@@ -27,9 +27,7 @@
   -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -0.5rem;
-  margin-left: -0.5rem; }
+  flex-wrap: wrap; }
 
 .row.reverse {
   -webkit-box-direction: reverse;
