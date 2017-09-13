@@ -1754,27 +1754,7 @@ a {
   color: #982329;
   text-transform: uppercase; }
 
-.content-width {
-  margin: auto;
-  display: inline-block;
-  width: auto; }
-  .content-width li {
-    display: inline-block;
-    padding: 0;
-    list-style: none; }
-    .content-width li a {
-      color: #ff2632;
-      text-transform: uppercase;
-      text-align: left !important;
-      letter-spacing: 1.5px;
-      padding: 6px 0 4px 10px;
-      text-decoration: none;
-      position: relative;
-      z-index: 20;
-      display: inline-block;
-      height: 42px;
-      font-size: 13px;
-      line-height: 24px;
-      font-weight: bold; }
+.margin-bottom20 {
+  margin-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */
