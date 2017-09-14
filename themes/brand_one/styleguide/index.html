@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Brand One Theme Styleguide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="../../core_theme/css/style.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../../core_theme/css/styleguide.css">
+
+</head>
+<body id="kss-node" >
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">Brand One Theme Styleguide</h1>
+  </header>
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-button.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Button</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-listing.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Listing</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+    <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
+      <h3 id="brand-one-theme-styleguide">Brand One Theme Styleguide</h3>
+<p><code>brand_one</code> theme is sub theme of <code>core_theme</code> which inherite all the features of <code>core_theme</code>.</p>
+<h6 id="core-theme-styleguide">Core Theme styleguide</h6>
+<p><code>core_theme</code> Styleguide is the base style guide for all Brands. To see style guide for core theme click here  <a href="../../core_theme/styleguide"> Core theme styleguide</a></p>
+<h6 id="run-the-following-commands-from-the-theme-directory">Run the following commands from the theme directory</h6>
+<h6 id="install-npm-dependencies-with">Install npm dependencies with</h6>
+<p><code>npm install</code></p>
+<p><em>This command looks at <code>package.json</code> and installs all the npm dependencies specified in it.  Some of the dependencies include gulp, autoprefixer, gulp-sass and others.</em></p>
+<h6 id="compiles-sass">Compiles Sass</h6>
+<p><code>gulp watch</code></p>
+<h6 id="generate-style-guide">Generate Style Guide</h6>
+<p><code>gulp styleguide</code></p>
+<h6 id="developer-workflow">Developer Workflow</h6>
+<p><code>cd</code> to <code>_/web/themes/brand_one</code> this will be where you run all your <code>npm</code> commands from. Use <code>gulp watch</code> to auto recompile js, scss, or twig files and <code>gulp styleguide</code> to generate the styleguide.</p>
+<p>For new components you need to create the scss file under scss/ folder and call that file into your style.scss file. After creating new file then run <code>gulp styleguide</code> into your <code>/brand_one</code> folder.</p>
+
+    </div>
+</article>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/prettify.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script>
+  prettyPrint();
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>
