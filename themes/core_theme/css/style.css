@@ -1,14 +1,14 @@
 .wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 1200px; }
 
 .container-fluid {
-  margin-right: auto;
   margin-left: auto;
-  padding-right: 2rem;
-  padding-left: 2rem; }
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem; }
 
 .row {
   -webkit-box-sizing: border-box;
@@ -28,13 +28,12 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
-
-.row.reverse {
-  -webkit-box-direction: reverse;
-  -webkit-box-orient: horizontal;
-  -moz-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse; }
+  .row.reverse {
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: horizontal;
+    -moz-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
 
 .col.reverse {
   -webkit-box-direction: reverse;
@@ -1692,25 +1691,31 @@
     .btn.button-yellow:hover {
       background: #d77300; }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 45px; }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 38px; }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 24px; }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 20px; }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 18px; }
 
 p {
   font-size: 18px; }
 
-a, .link {
+a,
+.link {
   font-size: 14px;
   text-decoration: none; }
 
@@ -1743,13 +1748,13 @@ a, .link {
   display: -ms-flexbox;
   display: flex; }
   .listing-rows .left-col {
-    width: 200px;
-    height: 200px;
-    background: gray;
+    background: #808080;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 15px; }
+    height: 200px;
+    margin-right: 15px;
+    width: 200px; }
 
 .category {
   color: #982329;

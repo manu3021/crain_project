@@ -1,7 +1,7 @@
 .kss-description hr {
-  height: 20px !important;
   font-weight: bold;
-  margin-bottom: 5px !important; }
+  height: 20px;
+  margin-bottom: 5px; }
   .kss-description hr.one {
     background: #fff; }
   .kss-description hr.two {
@@ -17,11 +17,11 @@
   .kss-description hr.seven {
     background: #d77300; }
 
-#kss-node .kss-parameters__name {
+.kss-main .kss-parameters__name {
   font-size: 18px;
   font-weight: bold; }
 
-#kss-node .kss-description code {
+.kss-main .kss-description code {
   border: 1px solid #808080;
   display: inline-block;
   margin: 10px 0;

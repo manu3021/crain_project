@@ -1,44 +1,54 @@
 // kss style for color
-@import "variable/variable";
+@import 'variable/variable';
 
 .kss-description {
-   hr {
-    height: 20px !important;
+
+  hr {
     font-weight: bold;
-    margin-bottom: 5px !important;
+    height: 20px;
+    margin-bottom: 5px;
+
     &.one {
       background: $white;
     }
+
     &.two {
       background: $black;
     }
+
     &.three {
       background: $red;
     }
+
     &.four {
       background: $gray;
     }
+
     &.five {
       background: $drak-red;
     }
+
     &.six {
       background: $yellow;
     }
+
     &.seven {
       background: $drak-yellow;
     }
   }
 }
-#kss-node {
+
+.kss-main {
+
   .kss-parameters__name {
     font-size: 18px;
     font-weight: bold;
   }
 
- .kss-description {
+  .kss-description {
 
     code {
-      border: 1px solid #808080;
+      border: 1px solid $gray;
       display: inline-block;
       margin: 10px 0;
       padding: 10px;

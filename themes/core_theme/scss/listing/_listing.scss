@@ -6,20 +6,18 @@
 
 
 .listing-rows {
-	display: flex;
-	.left-col {
-		width: 200px;
-    	height: 200px;
-    	background: gray;
-    	display: flex;
-    	margin-right: 15px;
-	}
-	.right-col {
+  display: flex;
 
-	}
+  .left-col {
+    background: $gray;
+    display: flex;
+    height: 200px;
+    margin-right: 15px;
+    width: 200px;
+  }
 }
 
 .category {
-	color: $red;
-	text-transform: uppercase;
+  color: $red;
+  text-transform: uppercase;
 }
