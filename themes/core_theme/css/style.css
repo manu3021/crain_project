@@ -1692,26 +1692,27 @@
     .btn.button-yellow:hover {
       background: #d77300; }
 
-h1 {
+h1, .h1 {
   font-size: 45px; }
 
-h2 {
+h2, .h2 {
   font-size: 38px; }
 
-h3 {
+h3, .h3 {
   font-size: 24px; }
 
-h4 {
+h4, .h4 {
   font-size: 20px; }
 
-h5 {
+h5, .h5 {
   font-size: 18px; }
 
 p {
   font-size: 18px; }
 
-a {
-  font-size: 14px; }
+a, .link {
+  font-size: 14px;
+  text-decoration: none; }
 
 .pager__items {
   clear: both;

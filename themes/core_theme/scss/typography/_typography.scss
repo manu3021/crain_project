@@ -4,23 +4,37 @@
 //
 // Style guide: Typography
 
-h1 {
+// Class Used to Headings And for link
+//
+// `.h1 , .h2, .h3, .h4, .h5` are all heading classes if you want to use style of heading on any tag use those classes.
+//
+// H1, .h1 - font-size 42px; font-family: roboto black
+// H2, .h2 - font-size 38px and fontfamily roboto black
+// H3, .h3 - font-size 24px and fontfamily roboto Bold
+// H4, .h4 - font-size 20px and fontfamily roboto regular
+// H5, .h5 - font-size 18px and fontfamily roboto bold
+// .link - This is class is used for link
+//
+// Styleguide Typography.1
+
+
+h1, .h1 {
   font-size: 45px;
 }
 
-h2 {
+h2, .h2 {
   font-size: 38px;
 }
 
-h3 {
+h3, .h3 {
   font-size: 24px;
 }
 
-h4 {
+h4, .h4 {
   font-size: 20px;
 }
 
-h5 {
+h5, .h5 {
   font-size: 18px;
 }
 
@@ -28,6 +42,7 @@ p {
   font-size: 18px;
 }
 
-a {
+a, .link {
   font-size: 14px;
+  text-decoration: none;
 }

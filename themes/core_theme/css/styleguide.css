@@ -17,4 +17,14 @@
   .kss-description hr.seven {
     background: #d77300; }
 
+#kss-node .kss-parameters__name {
+  font-size: 18px;
+  font-weight: bold; }
+
+#kss-node .kss-description code {
+  border: 1px solid #808080;
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px; }
+
 /*# sourceMappingURL=styleguide.css.map */

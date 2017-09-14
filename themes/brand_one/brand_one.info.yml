@@ -1,4 +1,3 @@
-
 name: Brand One
 type: theme
 description: Brand One is child theme of Core Theme. All features of base theme is used by this theme.
@@ -7,3 +6,6 @@ core: 8.x
 
 # core theme as a base theme
 base theme: core_theme
+
+libraries:
+  - brand_one/global

@@ -1,14 +1,6 @@
 # # These lines define the core_theme/global library.
 global:
-  js:
-    bower_components/lodash/lodash.js: {}
-    bower_components/bouncefix.js/dist/bouncefix.js: {}
-    dist/js/common.js: {}
-    dist/drupal-js-libraries/navigation.js: {}
-
   css:
-    base:
-      http://fast.fonts.net/cssapi/69fdb849-9596-41e2-bfcd-fbef96cc9216.css: { type: external }
     component:
       css/styleguide.css: {}
       css/style.css: {}

@@ -29,3 +29,19 @@
     }
   }
 }
+#kss-node {
+  .kss-parameters__name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+ .kss-description {
+
+    code {
+      border: 1px solid #808080;
+      display: inline-block;
+      margin: 10px 0;
+      padding: 10px;
+    }
+  }
+}
