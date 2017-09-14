@@ -2,9 +2,9 @@
 
 `brand_one` theme is sub theme of `core_theme` which inherite all the features of `core_theme`.
 
-###### Core Theme styleguide
+[** Core Theme Styleguide **](../../core_theme/styleguide)
 
-`core_theme` Styleguide is the base style guide for all Brands. To see style guide for core theme click here  [ Core theme styleguide](../../core_theme/styleguide)
+`core_theme` Styleguide is the base style guide for all Brands. To see style guide for core theme click here  [** Core Theme styleguide **](../../core_theme/styleguide)
 
 ###### Run the following commands from the theme directory
 
