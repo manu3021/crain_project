@@ -16,7 +16,7 @@ var paths = {
   scripts: 'js/',
   images: 'images/',
   styleGuide: 'styleguide',
-  templates: 'templates/' 
+  templates: 'templates/'
 };
 
 // error notifications
@@ -117,7 +117,7 @@ gulp.task('styleguide', function(){
 // Watch Task
 gulp.task('watch', ['sass'], function (){
   gulp.watch(paths.styles.source + '**/*.scss', ['sass']);
-  gulp.watch(paths.scripts + '**/*.js', ['lint']);
+  gulp.watch(paths.scripts + '**/*.js');
   gulp.watch(paths.templates + '**/*.twig');
 })
 

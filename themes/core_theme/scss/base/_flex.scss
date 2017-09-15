@@ -14,10 +14,6 @@
 
 
 @mixin flexbox {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -26,10 +22,6 @@
 //----------------------------------
 
 @mixin inline-flex {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -moz-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -58,9 +50,6 @@
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
   }
-  -webkit-flex-direction: $value;
-  -moz-flex-direction: $value;
-  -ms-flex-direction: $value;
   flex-direction: $value;
 }
 // Shorter version:
@@ -77,8 +66,6 @@
 
 @mixin flex-wrap($value: nowrap) {
   // No Webkit Box fallback.
-  -webkit-flex-wrap: $value;
-  -moz-flex-wrap: $value;
   @if $value == nowrap {
     -ms-flex-wrap: none;
   } @else {
@@ -98,9 +85,6 @@
 
 @mixin flex-flow($values: (row nowrap)) {
   // No Webkit Box fallback.
-  -webkit-flex-flow: $values;
-  -moz-flex-flow: $values;
-  -ms-flex-flow: $values;
   flex-flow: $values;
 }
 
@@ -112,10 +96,6 @@
 // their flex container, by assigning them to ordinal groups.
 
 @mixin order($int: 0) {
-  -webkit-box-ordinal-group: $int + 1;
-  -webkit-order: $int;
-  -moz-order: $int;
-  -ms-flex-order: $int;
   order: $int;
 }
 
@@ -128,10 +108,6 @@
 
 
 @mixin flex-grow($int: 0) {
-  -webkit-box-flex: $int;
-  -webkit-flex-grow: $int;
-  -moz-flex-grow: $int;
-  -ms-flex-positive: $int;
   flex-grow: $int;
 }
 
@@ -143,9 +119,6 @@
 
 
 @mixin flex-shrink($int: 1) {
-  -webkit-flex-shrink: $int;
-  -moz-flex-shrink: $int;
-  -ms-flex-negative: $int;
   flex-shrink: $int;
 }
 
@@ -156,9 +129,6 @@
 // The 'flex-basis' property sets the flex basis. Negative lengths are invalid.
 
 @mixin flex-basis($value: auto) {
-  -webkit-flex-basis: $value;
-  -moz-flex-basis: $value;
-  -ms-flex-preferred-size: $value;
   flex-basis: $value;
 }
 
@@ -177,12 +147,6 @@
   @if type-of($fg) == 'list' {
     $fg-boxflex: nth($fg, 1);
   }
-
-  -webkit-box-flex: $fg-boxflex;
-  -webkit-flex: $fg $fs $fb;
-  -moz-box-flex: $fg-boxflex;
-  -moz-flex: $fg $fs $fb;
-  -ms-flex: $fg $fs $fb;
   flex: $fg $fs $fb;
 }
 
@@ -206,8 +170,6 @@
     -webkit-box-pack: $value;
     -ms-flex-pack: $value;
   }
-  -webkit-justify-content: $value;
-  -moz-justify-content: $value;
   justify-content: $value;
 }
 // Shorter version:
@@ -229,8 +191,6 @@
     -webkit-box-align: $value;
     -ms-flex-align: $value;
   }
-  -webkit-align-items: $value;
-  -moz-align-items: $value;
   align-items: $value;
 }
 
@@ -241,8 +201,7 @@
 
 @mixin align-self($value: auto) {
   // No Webkit Box Fallback.
-  -webkit-align-self: $value;
-  -moz-align-self: $value;
+
   @if $value == flex-start {
     -ms-flex-item-align: start;
   } @else if $value == flex-end {
@@ -258,8 +217,7 @@
 
 @mixin align-content($value: stretch) {
   // No Webkit Box Fallback.
-  -webkit-align-content: $value;
-  -moz-align-content: $value;
+
   @if $value == flex-start {
     -ms-flex-line-pack: start;
   } @else if $value == flex-end {
