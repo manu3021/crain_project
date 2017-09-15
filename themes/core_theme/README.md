@@ -2,6 +2,9 @@
 If you haven't yet, install nvm:
 https://github.com/creationix/nvm
 
+### Stylegudie
+To see the styleguide . you need to go in apperance and then click on setting where styleguide link appear click on it.
+
 ### Run the following commands from the theme directory
 
 #### Use the right version of node with:

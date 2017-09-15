@@ -7,7 +7,7 @@
     font-weight: bold;
     height: 20px;
     margin-bottom: 5px;
-
+    border: 1px solid $gray;
     &.one {
       background: $white;
     }
@@ -25,7 +25,7 @@
     }
 
     &.five {
-      background: $drak-red;
+      background: $dark-red;
     }
 
     &.six {
@@ -33,7 +33,35 @@
     }
 
     &.seven {
-      background: $drak-yellow;
+      background: $dark-yellow;
+    }
+
+    &.eight {
+      background: $blue;
+    }
+
+    &.nine {
+      background: $dark-blue;
+    }
+
+    &.ten {
+      background: $link;
+    }
+
+    &.eleven {
+      background: $primary-color;
+    }
+
+    &.twelve {
+      background: $disabled-element;
+    }
+
+    &.thirteen {
+      background: $text-divider;
+    }
+
+    &.fourteen {
+      background: $ui-element;
     }
   }
 }
@@ -52,6 +80,13 @@
       display: inline-block;
       margin: 10px 0;
       padding: 10px;
+    }
+
+    .row {
+      span {
+        flex: 0 0 32%;
+        margin: 0 .5%;
+      }
     }
   }
 }

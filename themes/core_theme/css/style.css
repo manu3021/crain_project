@@ -1531,8 +1531,9 @@
   border-radius: 4px;
   color: #fff;
   display: inline-block;
+  font-size: 14px;
   outline: none;
-  padding: 14px;
+  padding: 10px 15px;
   text-decoration: none; }
   .btn:active {
     -webkit-box-shadow: 0 0 3px #000;
@@ -1545,6 +1546,10 @@
     background: #ff8f0d; }
     .btn.button-yellow:hover {
       background: #d77300; }
+  .btn.button-blue {
+    background: #02abea; }
+    .btn.button-blue:hover {
+      background: #0379a5; }
 
 h1,
 .h1 {

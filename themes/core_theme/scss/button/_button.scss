@@ -12,8 +12,9 @@
   border-radius: 4px;
   color: $white;
   display: inline-block;
+  font-size: 14px;
   outline: none;
-  padding: 14px;
+  padding: 10px 15px;
   text-decoration: none;
 
   &:active {
@@ -24,7 +25,7 @@
     background: $red;
 
     &:hover {
-      background: $drak-red;
+      background: $dark-red;
     }
   }
 
@@ -32,7 +33,15 @@
     background: $yellow;
 
     &:hover {
-      background: $drak-yellow;
+      background: $dark-yellow;
+    }
+  }
+
+  &.button-blue {
+    background: $blue;
+
+    &:hover {
+      background: $dark-blue;
     }
   }
 }

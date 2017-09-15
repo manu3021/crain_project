@@ -1,7 +1,8 @@
 .kss-description hr {
   font-weight: bold;
   height: 20px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  border: 1px solid #808080; }
   .kss-description hr.one {
     background: #fff; }
   .kss-description hr.two {
@@ -16,6 +17,20 @@
     background: #ff8f0d; }
   .kss-description hr.seven {
     background: #d77300; }
+  .kss-description hr.eight {
+    background: #02abea; }
+  .kss-description hr.nine {
+    background: #0379a5; }
+  .kss-description hr.ten {
+    background: #3b38be; }
+  .kss-description hr.eleven {
+    background: #003768; }
+  .kss-description hr.twelve {
+    background: #acacac; }
+  .kss-description hr.thirteen {
+    background: #7d7d7d; }
+  .kss-description hr.fourteen {
+    background: #464646; }
 
 .kss-main .kss-parameters__name {
   font-size: 18px;
@@ -26,5 +41,11 @@
   display: inline-block;
   margin: 10px 0;
   padding: 10px; }
+
+.kss-main .kss-description .row span {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
+  margin: 0 .5%; }
 
 /*# sourceMappingURL=styleguide.css.map */
