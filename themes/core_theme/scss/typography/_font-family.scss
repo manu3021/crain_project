@@ -1,0 +1,66 @@
+// font Family roboto
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;  font-style: normal;
+  src: url('../fonts/roboto/Roboto-Regular.woff') format('woff'),
+  url('../fonts/roboto/Roboto-Regular.otf') format('otf'),
+  url('../fonts/roboto/Roboto-Regular.eot') format('eot'),
+  url('../fonts/roboto/Roboto-Regular.ttf') format('ttf'),
+  url('../fonts/roboto/Roboto-Regular.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/roboto/Roboto-Light.woff') format('woff'),
+  url('../fonts/roboto/Roboto-Light.otf') format('otf'),
+  url('../fonts/roboto/Roboto-Light.eot') format('eot'),
+  url('../fonts/roboto/Roboto-Light.ttf') format('ttf'),
+  url('../fonts/roboto/Roboto-Light.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/roboto/Roboto-Bold.woff') format('woff'),
+  url('../fonts/roboto/Roboto-Bold.otf') format('otf'),
+  url('../fonts/roboto/Roboto-Bold.eot') format('eot'),
+  url('../fonts/roboto/Roboto-Bold.ttf') format('ttf'),
+  url('../fonts/roboto/Roboto-Bold.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-style: normal;
+  src: url('../fonts/roboto/Roboto-Black.woff') format('woff'),
+  url('../fonts/roboto/Roboto-Black.otf') format('otf'),
+  url('../fonts/roboto/Roboto-Black.eot') format('eot'),
+  url('../fonts/roboto/Roboto-Black.ttf') format('ttf'),
+  url('../fonts/roboto/Roboto-Black.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: italic;
+  src: url('../fonts/roboto/Roboto-Italic.woff') format('woff'),
+  url('../fonts/roboto/Roboto-Italic.otf') format('otf'),
+  url('../fonts/roboto/Roboto-Italic.eot') format('eot'),
+  url('../fonts/roboto/Roboto-Italic.ttf') format('ttf'),
+  url('../fonts/roboto/Roboto-Italic.svg') format('svg');
+}
+
+//font family open sans
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/openSans/OpenSans-Regular.woff') format('woff'),
+  url('../fonts/openSans/OpenSans-Regular.otf') format('otf'),
+  url('../fonts/openSans/OpenSans-Regular.eot') format('eot'),
+  url('../fonts/openSans/OpenSans-Regular.ttf') format('ttf'),
+  url('../fonts/openSans/OpenSans-Regular.svg') format('svg');
+}

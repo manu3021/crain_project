@@ -28,33 +28,33 @@
         </a>
       </li>
       <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-1.html">
-          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Variables</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-button.html">
-          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Button</span>
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Button</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-grid.html">
-          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Grid with flex box</span>
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Grid with flex box</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-listing.html">
-          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Listing</span>
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Listing</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-pager.html">
-          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Pager</span>
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Pager</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-typography.html">
-          <span class="kss-nav__ref">6</span><span class="kss-nav__name">Typography</span>
+          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Typography</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-variable.html">
+          <span class="kss-nav__ref">6</span><span class="kss-nav__name">Variables</span>
         </a>
       </li>
     </ul>
@@ -68,7 +68,7 @@
         <h1 class="kss-title kss-title--level-1">
           <a class="kss-title__permalink" href="#kssref-button">
             <span class="kss-title__ref">
-              2
+              1
               <span class="kss-title__permalink-hash">
                   #button
               </span>
@@ -113,57 +113,66 @@
 
         <div class="kss-modifier__wrapper">
           <div class="kss-modifier__heading kss-style">
-            Examples
+            Example
           </div>
 
-            <div class="kss-modifier__default-name kss-style">
-              Default styling
-            </div>
 
           <div class="kss-modifier__example">
-            <button class="btn button-red">Button</button>
-<button class="btn button-yellow">Button</button>
-<button class="btn button-blue">Button</button>
+            <div class="btn-wrapper-kss row">
+    <div class="default-styling-kss col-md-12">
+        <h4>Default State</h4>
+        <button class="btn button-red">Button</button>
+        <button class="btn button-yellow ">Button</button>
+        <button class="btn button-blue">Button</button>
+    </div>
 
+
+    <div class="hover-styling-kss col-md-12 ">
+        <h4>Hover state</h4>
+        <button class="btn button-red">Button</button>
+        <button class="btn button-yellow ">Button</button>
+        <button class="btn button-blue ">Button</button>
+    </div>
+
+    <div class="active-styling-kss col-md-12 ">
+        <h4>Active State</h4>
+        <button class="btn button-red ">Button</button>
+        <button class="btn button-yellow ">Button</button>
+        <button class="btn button-blue ">Button</button>
+    </div>
+</div>
             <div class="kss-modifier__example-footer"></div>
           </div>
 
-            <div class="kss-modifier__name kss-style">
-              Hover
-            </div>
-            <div class="kss-modifier__description kss-style">
-              To see hover effect hover on button.
-            </div>
-            <div class="kss-modifier__example">
-              <button class="btn button-red">Button</button>
-<button class="btn button-yellow">Button</button>
-<button class="btn button-blue">Button</button>
-
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              Active
-            </div>
-            <div class="kss-modifier__description kss-style">
-              To see active or click effect click on button.
-            </div>
-            <div class="kss-modifier__example">
-              <button class="btn button-red">Button</button>
-<button class="btn button-yellow">Button</button>
-<button class="btn button-blue">Button</button>
-
-              <div class="kss-modifier__example-footer"></div>
-            </div>
         </div>
 
           <details class="kss-markup kss-style">
             <summary>
                 Markup: <code>button/button.html</code>
             </summary>
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class&#x3D;&quot;btn button-red&quot;&gt;Button&lt;/button&gt;
-&lt;button class&#x3D;&quot;btn button-yellow&quot;&gt;Button&lt;/button&gt;
-&lt;button class&#x3D;&quot;btn button-blue&quot;&gt;Button&lt;/button&gt;
-</code></pre>
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;btn-wrapper-kss row&quot;&gt;
+    &lt;div class&#x3D;&quot;default-styling-kss col-md-12&quot;&gt;
+        &lt;h4&gt;Default State&lt;/h4&gt;
+        &lt;button class&#x3D;&quot;btn button-red&quot;&gt;Button&lt;/button&gt;
+        &lt;button class&#x3D;&quot;btn button-yellow &quot;&gt;Button&lt;/button&gt;
+        &lt;button class&#x3D;&quot;btn button-blue&quot;&gt;Button&lt;/button&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class&#x3D;&quot;hover-styling-kss col-md-12 &quot;&gt;
+        &lt;h4&gt;Hover state&lt;/h4&gt;
+        &lt;button class&#x3D;&quot;btn button-red&quot;&gt;Button&lt;/button&gt;
+        &lt;button class&#x3D;&quot;btn button-yellow &quot;&gt;Button&lt;/button&gt;
+        &lt;button class&#x3D;&quot;btn button-blue &quot;&gt;Button&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;active-styling-kss col-md-12 &quot;&gt;
+        &lt;h4&gt;Active State&lt;/h4&gt;
+        &lt;button class&#x3D;&quot;btn button-red &quot;&gt;Button&lt;/button&gt;
+        &lt;button class&#x3D;&quot;btn button-yellow &quot;&gt;Button&lt;/button&gt;
+        &lt;button class&#x3D;&quot;btn button-blue &quot;&gt;Button&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
           </details>
 
         <div class="kss-source kss-style">
