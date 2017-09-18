@@ -1,3 +1,39 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.otf") format("otf"), url("../fonts/roboto/Roboto-Regular.eot") format("eot"), url("../fonts/roboto/Roboto-Regular.ttf") format("ttf"), url("../fonts/roboto/Roboto-Regular.svg") format("svg"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.otf") format("otf"), url("../fonts/roboto/Roboto-Light.eot") format("eot"), url("../fonts/roboto/Roboto-Light.ttf") format("ttf"), url("../fonts/roboto/Roboto-Light.svg") format("svg"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.otf") format("otf"), url("../fonts/roboto/Roboto-Bold.eot") format("eot"), url("../fonts/roboto/Roboto-Bold.ttf") format("ttf"), url("../fonts/roboto/Roboto-Bold.svg") format("svg"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/roboto/Roboto-Black.woff") format("woff"), url("../fonts/roboto/Roboto-Black.otf") format("otf"), url("../fonts/roboto/Roboto-Black.eot") format("eot"), url("../fonts/roboto/Roboto-Black.ttf") format("ttf"), url("../fonts/roboto/Roboto-Black.svg") format("svg"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/roboto/Roboto-Italic.woff") format("woff"), url("../fonts/roboto/Roboto-Italic.otf") format("otf"), url("../fonts/roboto/Roboto-Italic.eot") format("eot"), url("../fonts/roboto/Roboto-Italic.ttf") format("ttf"), url("../fonts/roboto/Roboto-Italic.svg") format("svg"); }
+
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/openSans/OpenSans-Regular.woff") format("woff"), url("../fonts/openSans/OpenSans-Regular.otf") format("otf"), url("../fonts/openSans/OpenSans-Regular.eot") format("eot"), url("../fonts/openSans/OpenSans-Regular.ttf") format("ttf"), url("../fonts/openSans/OpenSans-Regular.svg") format("svg"); }
+
 .wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1533,15 +1569,15 @@
   display: inline-block;
   font-size: 14px;
   outline: none;
-  padding: 10px 15px;
+  padding: 14px;
   text-decoration: none; }
   .btn:active {
     -webkit-box-shadow: 0 0 3px #000;
             box-shadow: 0 0 3px #000; }
   .btn.button-red {
-    background: #982329; }
+    background: #b11116; }
     .btn.button-red:hover {
-      background: #8d2725; }
+      background: #800e11; }
   .btn.button-yellow {
     background: #ff8f0d; }
     .btn.button-yellow:hover {
@@ -1553,30 +1589,53 @@
 
 h1,
 .h1 {
-  font-size: 45px; }
+  font-family: Roboto, helvetica;
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 49px; }
 
 h2,
 .h2 {
-  font-size: 38px; }
+  font-family: Roboto, helvetica;
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 42px; }
 
 h3,
 .h3 {
-  font-size: 24px; }
+  font-family: Roboto, helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 h4,
-.h4 {
-  font-size: 20px; }
+.h4,
+.intro-text {
+  font-family: Roboto, helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px; }
 
 h5,
 .h5 {
-  font-size: 18px; }
+  font-family: Roboto, helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase; }
 
 p {
-  font-size: 18px; }
+  font-family: Roboto, helvetica;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px; }
 
 a,
 .link {
+  color: #3b38be;
+  font-family: OpenSans, arial;
   font-size: 14px;
+  font-weight: 400;
   text-decoration: none; }
 
 .pager__items {
@@ -1590,9 +1649,9 @@ a,
       color: #000;
       text-decoration: none; }
       .pager__items .pager__item a:hover {
-        color: #808080; }
+        color: #ebebeb; }
     .pager__items .pager__item.is-active a {
-      color: #982329;
+      color: #b11116;
       text-decoration: underline; }
 
 .visually-hidden {
@@ -1608,7 +1667,7 @@ a,
   display: -ms-flexbox;
   display: flex; }
   .listing-rows .left-col {
-    background: #808080;
+    background: #ebebeb;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1617,7 +1676,7 @@ a,
     width: 200px; }
 
 .category {
-  color: #982329;
+  color: #b11116;
   text-transform: uppercase; }
 
 .margin-bottom20 {

@@ -4,10 +4,11 @@
 .kss-description {
 
   hr {
+    border: 1px solid $gray-bg;
     font-weight: bold;
     height: 20px;
     margin-bottom: 5px;
-    border: 1px solid $gray;
+
     &.one {
       background: $white;
     }
@@ -21,11 +22,11 @@
     }
 
     &.four {
-      background: $gray;
+      background: $gray-bg;
     }
 
     &.five {
-      background: $dark-red;
+      background: $red-101;
     }
 
     &.six {
@@ -33,7 +34,7 @@
     }
 
     &.seven {
-      background: $dark-yellow;
+      background: $yellow-101;
     }
 
     &.eight {
@@ -41,7 +42,7 @@
     }
 
     &.nine {
-      background: $dark-blue;
+      background: $blue-101;
     }
 
     &.ten {
@@ -49,19 +50,23 @@
     }
 
     &.eleven {
-      background: $primary-color;
+      background: $brand-primary-color;
     }
 
     &.twelve {
-      background: $disabled-element;
+      background: $gray-disabled-ele;
     }
 
     &.thirteen {
-      background: $text-divider;
+      background: $gray-divider;
     }
 
     &.fourteen {
-      background: $ui-element;
+      background: $gray-ul-ele;
+    }
+
+    &.fteen {
+      background: $red-102;
     }
   }
 }
@@ -76,17 +81,40 @@
   .kss-description {
 
     code {
-      border: 1px solid $gray;
+      border: 1px solid $gray-bg;
       display: inline-block;
       margin: 10px 0;
       padding: 10px;
     }
 
     .row {
+
       span {
         flex: 0 0 32%;
         margin: 0 .5%;
       }
     }
+  }
+}
+
+.active-styling-kss {
+
+  .btn {
+    box-shadow: 0 0 3px $black;
+  }
+}
+
+.hover-styling-kss {
+
+  .button-red {
+    background: $red-101;
+  }
+
+  .button-yellow {
+    background: $yellow-101;
+  }
+
+  .button-blue {
+    background: $blue-101;
   }
 }

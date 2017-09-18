@@ -1,51 +1,86 @@
 // Variables
 //
+//
+//<h4>Color variables</h4>
 //<div class="row">
 //<hr></hr>
 // <span><hr class="one"></hr>
 // $white: #fff;</span>
 // <span><hr class="two"></hr>
 // $black: #000;</span>
+//
 // <span><hr class="three"></hr>
-// $red: #982329;</span>
-// <span><hr class="four"></hr>
-// $gray: #808080;</span>
+// $red: #b11116;</span>
 // <span><hr class="five"></hr>
-// $dark-red: #8d2725;</span>
+// $red-101: #800e11;</span>
+// <span><hr class="fteen"></hr>
+// $red-102: #811116;</span>
+//
 // <span><hr class="six"></hr>
 // $yellow: #ff8f0d;</span>
 // <span><hr class="seven"></hr>
-// $dark-yellow: #d77300; </span>
+// $yellow-101: #d77300; </span>
+//
+// <span><hr class="ten"></hr>
+// $link: #3b38be; </span>
+//
 // <span><hr class="eight"></hr>
 // $blue: #02abea; </span>
 // <span><hr class="nine"></hr>
-// $dark-blue: #0379a5; </span>
-// <span><hr class="ten"></hr>
-// $link: #3b38be; </span>
+// $blue-101: #0379a5; </span>
 // <span><hr class="eleven"></hr>
-// $primary-color: #003768; </span>
+// $brand-primary-color: #003768; </span>
+//
+// <span><hr class="four"></hr>
+// $gray-bg: #ebebeb;</span>
 // <span><hr class="twelve"></hr>
-// $disabled-element: #acacac; </span>
+// $gray-disabled-ele: #acacac; </span>
 // <span><hr class="thirteen"></hr>
-// $text-divider: #7d7d7d;</span>
+// $gray-divider: #7d7d7d;</span>
 // <span><hr class="fourteen"></hr>
-// $ui-element: #464646;</span>
+// $gray-ul-ele: #464646;</span>
 // </div>
 //
-// styleguide 1
+// styleguide variable
 
 //color variable
 $white: #fff;
 $black: #000;
-$red: #982329;
-$gray: #808080;
-$dark-red: #8d2725;
+
+$red: #b11116;
+$red-101: #800e11;
+$red-102: #811116;
+
 $yellow: #ff8f0d;
-$dark-yellow: #d77300;
+$yellow-101: #d77300;
+
 $blue: #02abea;
-$dark-blue: #0379a5;
+$blue-101: #0379a5;
+$brand-primary-color: #003768;
+
 $link: #3b38be;
-$primary-color: #003768;
-$disabled-element: #acacac;
-$text-divider: #7d7d7d;
-$ui-element: #464646;
+
+$gray-bg: #ebebeb;
+$gray-disabled-ele: #acacac;
+$gray-divider: #7d7d7d;
+$gray-ul-ele: #464646;
+
+
+
+// Fonts variable
+//
+//
+//<h4>Font Variables</h4>
+//
+//<span>$roboto: Roboto , helvetica;</span></br>
+//<span>$opensans: OpenSans, arial;</span></br>
+//
+//styleguide variable.1
+
+$roboto: Roboto , helvetica;
+$opensans: OpenSans, arial;
+
+$bold: 700;
+$light: 300;
+$regular: 400;
+$fblack: 900;

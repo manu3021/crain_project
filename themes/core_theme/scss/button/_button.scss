@@ -2,8 +2,6 @@
 //
 // Markup: button.html
 //
-// Hover  -  To see hover effect hover on button.
-// Active  - To see active or click effect click on button.
 //
 // Style guide: button
 
@@ -14,7 +12,7 @@
   display: inline-block;
   font-size: 14px;
   outline: none;
-  padding: 10px 15px;
+  padding: 14px;
   text-decoration: none;
 
   &:active {
@@ -25,7 +23,7 @@
     background: $red;
 
     &:hover {
-      background: $dark-red;
+      background: $red-101;
     }
   }
 
@@ -33,7 +31,7 @@
     background: $yellow;
 
     &:hover {
-      background: $dark-yellow;
+      background: $yellow-101;
     }
   }
 
@@ -41,7 +39,7 @@
     background: $blue;
 
     &:hover {
-      background: $dark-blue;
+      background: $blue-101;
     }
   }
 }

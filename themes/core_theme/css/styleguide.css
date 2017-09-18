@@ -1,18 +1,18 @@
 .kss-description hr {
+  border: 1px solid #ebebeb;
   font-weight: bold;
   height: 20px;
-  margin-bottom: 5px;
-  border: 1px solid #808080; }
+  margin-bottom: 5px; }
   .kss-description hr.one {
     background: #fff; }
   .kss-description hr.two {
     background: #000; }
   .kss-description hr.three {
-    background: #982329; }
+    background: #b11116; }
   .kss-description hr.four {
-    background: #808080; }
+    background: #ebebeb; }
   .kss-description hr.five {
-    background: #8d2725; }
+    background: #800e11; }
   .kss-description hr.six {
     background: #ff8f0d; }
   .kss-description hr.seven {
@@ -31,13 +31,15 @@
     background: #7d7d7d; }
   .kss-description hr.fourteen {
     background: #464646; }
+  .kss-description hr.fteen {
+    background: #811116; }
 
 .kss-main .kss-parameters__name {
   font-size: 18px;
   font-weight: bold; }
 
 .kss-main .kss-description code {
-  border: 1px solid #808080;
+  border: 1px solid #ebebeb;
   display: inline-block;
   margin: 10px 0;
   padding: 10px; }
@@ -47,5 +49,18 @@
       -ms-flex: 0 0 32%;
           flex: 0 0 32%;
   margin: 0 .5%; }
+
+.active-styling-kss .btn {
+  -webkit-box-shadow: 0 0 3px #000;
+          box-shadow: 0 0 3px #000; }
+
+.hover-styling-kss .button-red {
+  background: #800e11; }
+
+.hover-styling-kss .button-yellow {
+  background: #d77300; }
+
+.hover-styling-kss .button-blue {
+  background: #0379a5; }
 
 /*# sourceMappingURL=styleguide.css.map */
