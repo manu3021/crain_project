@@ -1,0 +1,1 @@
+{"version":3,"sources":["button/_button.scss"],"names":[],"mappings":"AAAA;EAEI,WAAW;EACX,iBAAiB;EACjB,mBAAmB;CACpB","file":"style.css","sourcesContent":[".sumit {\n  a {\n    color: red;\n    font-size: 100px;\n    font-family: arial;\n  }\n}\n"]}

@@ -1,11 +1,33 @@
 name: Brand One
 type: theme
-description: Brand One is child theme of Core Theme. All features of base theme is used by this theme.
+description: Brand One theme is based on atomic design which use pattern lab.
 package: Other
 core: 8.x
 
 # core theme as a base theme
-base theme: core_theme
+base theme: classy
 
 libraries:
   - brand_one/global
+
+
+# For compatibility with Pattern Lab templates; this list must
+# always be the folders immediately under the `$sourceDir` patterns folder
+# `$sourceDir` = defined in `pattern-lab/config/config.yml` under `sourceDir
+# patterns folder = `$sourceDir` + `_patterns/`
+component-libraries:
+  atoms:
+    paths:
+      - pattern-lab/source/_patterns/00-atoms
+  molecules:
+    paths:
+      - pattern-lab/source/_patterns/01-molecules
+  organisms:
+    paths:
+      - pattern-lab/source/_patterns/02-organisms
+  templates:
+    paths:
+      - pattern-lab/source/_patterns/03-templates
+  pages:
+    paths:
+      - pattern-lab/source/_patterns/04-pages
