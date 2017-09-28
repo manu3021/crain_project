@@ -9,11 +9,11 @@
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" href="kss-assets/kss.css">
-  <link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/styleguide.css">
+  <link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/styleguide.css">
 
 </head>
-<body id="kss-node" class="kss-fullscreen-mode">
+<body id="kss-node" >
 
 <div class="kss-sidebar kss-style">
   <header class="kss-header">
@@ -39,7 +39,7 @@
       </li>
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-listing.html">
-          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Listing</span>
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">listing</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
@@ -61,45 +61,19 @@
   </nav>
 </div>
 <article role="main" class="kss-main">
-
-    <div id="kssref-button-1" class="kss-section kss-section--depth-2 is-fullscreen">
-
-      <div class="kss-style">
-        <h2 class="kss-title kss-title--level-2">
-          <a class="kss-title__permalink" href="#kssref-button-1">
-            <span class="kss-title__ref">
-              1.1
-              <span class="kss-title__permalink-hash">
-                  #button.1
-              </span>
-            </span>
-            Button Classes
-          </a>
-        </h2>
-
-
-
-          <div class="kss-parameters__title">Parameters:</div>
-          <ul class="kss-parameters">
-            <li class="kss-parameters__item">
-              <div class="kss-parameters__name"><code>.button-red</code></div>
-              <div class="kss-parameters__description">
-                Button-Red class used for background red of button.
-              </div>
-            </li>
-            <li class="kss-parameters__item">
-              <div class="kss-parameters__name"><code>.button-yellow</code></div>
-              <div class="kss-parameters__description">
-                Button yellow Class used for background yellow of button.
-              </div>
-            </li>
-          </ul>
-      </div>
-
-
-        <div class="kss-source kss-style">
-          Source: <code>button/_button.scss</code>, line 10
-        </div>
+    <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
+      <h2 id="getting-started">Getting Started</h2>
+<h6 id="run-the-following-commands-from-the-theme-directory">Run the following commands from the theme directory</h6>
+<h6 id="install-npm-dependencies-with">Install npm dependencies with</h6>
+<p><code>npm install</code></p>
+<p><em>This command looks at <code>package.json</code> and installs all the npm dependencies specified in it.  Some of the dependencies include gulp, autoprefixer, gulp-sass and others.</em></p>
+<h6 id="compiles-sass">Compiles Sass</h6>
+<p><code>gulp watch</code></p>
+<h6 id="generate-style-guide">Generate Style Guide</h6>
+<p><code>gulp styleguide</code></p>
+<h6 id="developer-workflow">Developer Workflow</h6>
+<p><code>cd</code> to <em>/web/themes/core__theme</em> this will be where you run all your <code>npm</code> commands from. Use <code>gulp watch</code> to auto recompile js, scss, or twig files and <code>gulp styleguide</code> to generate the styleguide.</p>
+<p>For new components you need to create the scss file under scss/ folder and call that file into your style.scss file. After creating new file then run <code>gulp styleguide</code> into your <em>/core__theme</em> folder.</p>
 
     </div>
 </article>
