@@ -15,7 +15,7 @@ var paths = {
   },
   scripts: 'js/',
   images: 'images/',
-  styleGuide: 'styleguide',
+  styleGuide: 'Components/styleguide',
   templates: 'templates/'
 };
 
@@ -102,8 +102,8 @@ gulp.task('images', function(){
 // Task to generate the styleguide
 gulp.task('styleguide', function(){
   var css = [
-    '../css/style.css',
-    '../css/styleguide.css'
+    '../../css/style.css',
+    '../../css/styleguide.css'
   ];
   return kss({
     title: 'Core theme Styleguide',
