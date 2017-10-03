@@ -1,7 +1,7 @@
 .kss-description hr {
   border: 1px solid #ebebeb;
   font-weight: bold;
-  height: 20px;
+  height: 40px;
   margin-bottom: 5px; }
   .kss-description hr.one {
     background: #fff; }
@@ -65,5 +65,8 @@
 
 #kss-node .kss-title__permalink {
   font-size: 24px; }
+
+#kss-node .kss-title__ref {
+  display: none; }
 
 /*# sourceMappingURL=styleguide.css.map */

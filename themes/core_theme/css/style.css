@@ -1679,6 +1679,12 @@ a,
   color: #b11116;
   text-transform: uppercase; }
 
+.views-field-title a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  font-weight: 700; }
+
 .margin-bottom20 {
   margin-bottom: 20px; }
 
