@@ -36,7 +36,6 @@ patternLab:
     source: pattern-lab/source/
 browserSync:
   enabled: true
-  port: 80
   watchFiles: null
   baseDir: ./
   startPath: pattern-lab/public
