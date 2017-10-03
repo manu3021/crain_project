@@ -31,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="image.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pattern-lab/source/_patterns/00-atoms/image/image.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -45,7 +45,27 @@
         <entry file="file://$PROJECT_DIR$/pattern-lab/source/_patterns/00-atoms/image/image.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+              <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views-listing.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pattern-lab/source/_patterns/01-molecules/views/views-listing.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views-listing.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pattern-lab/source/_patterns/01-molecules/views/views-listing.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,16 +95,6 @@
         <entry file="file://$PROJECT_DIR$/pattern-lab/source/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-864">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_animation.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pattern-lab/source/css/scss/base/_animation.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -127,8 +137,6 @@
         <option value="$PROJECT_DIR$/templates/views/views-view-crain-unformatted.html.twig" />
         <option value="$PROJECT_DIR$/templates/views/views-view-unformatted.html.twig" />
         <option value="$PROJECT_DIR$/templates/view-views-unformatted.html.twig" />
-        <option value="$PROJECT_DIR$/pattern-lab/source/_patterns/01-molecules/views/views.json" />
-        <option value="$PROJECT_DIR$/pattern-lab/source/_patterns/01-molecules/views/views.twig" />
         <option value="$PROJECT_DIR$/../core_theme/scss/PragHeading/prag.html" />
         <option value="$PROJECT_DIR$/../core_theme/scss/PragHeading/_prag.scss" />
         <option value="$PROJECT_DIR$/../core_theme/scss/style.scss" />
@@ -143,6 +151,8 @@
         <option value="$PROJECT_DIR$/templates/views-view-unformatted.html.twig" />
         <option value="$PROJECT_DIR$/pattern-lab/source/_patterns/00-atoms/image/image.json" />
         <option value="$PROJECT_DIR$/pattern-lab/source/_patterns/00-atoms/image/image.twig" />
+        <option value="$PROJECT_DIR$/pattern-lab/source/_patterns/01-molecules/views/views.json" />
+        <option value="$PROJECT_DIR$/pattern-lab/source/_patterns/01-molecules/views/views.twig" />
       </list>
     </option>
   </component>
@@ -237,6 +247,23 @@
               <item name="00-atoms" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="image" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="brand_one" type="b2602c69:ProjectViewProjectNode" />
+              <item name="brand_one" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pattern-lab" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="01-molecules" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="brand_one" type="b2602c69:ProjectViewProjectNode" />
+              <item name="brand_one" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pattern-lab" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="source" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="_patterns" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="01-molecules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -289,7 +316,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53834000" />
+    <option name="totallyTimeSpent" value="55988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1303" height="780" extended-state="6" />
@@ -488,13 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pattern-lab/source/_patterns/01-molecules/views/views.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../core_theme/scss/pager/_pager.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -506,13 +526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pattern-lab/source/_patterns/01-molecules/views/views.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="49" lean-forward="true" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -638,18 +651,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pattern-lab/source/_patterns/00-atoms/image/image.json">
+    <entry file="file://$PROJECT_DIR$/pattern-lab/source/_patterns/00-atoms/image/image.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pattern-lab/source/_patterns/00-atoms/image/image.twig">
+    <entry file="file://$PROJECT_DIR$/pattern-lab/source/_patterns/00-atoms/image/image.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="36">
+          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pattern-lab/source/_patterns/01-molecules/views/views-listing.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pattern-lab/source/_patterns/01-molecules/views/views-listing.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
           <folding />
         </state>
       </provider>

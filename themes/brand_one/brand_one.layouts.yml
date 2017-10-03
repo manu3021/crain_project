@@ -1,0 +1,9 @@
+brand_one_custom:
+  label: brand one 2 col layout
+  category: brand One base
+  template: layouts/brand_one_two-col
+  region:
+    left:
+       label: Left Brand
+    right:
+       label: Right Brand
