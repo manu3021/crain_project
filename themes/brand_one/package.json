@@ -4,7 +4,7 @@
   "description": "A Drupal theme whose Twig templates are integrated with Pattern Lab.",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "bower install && gulp clean && gulp compile && gulp",
+    "start": "gulp clean && gulp compile",
     "compile": "gulp clean && gulp compile",
     "test": "gulp validate"
   },
