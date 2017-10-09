@@ -1,0 +1,19 @@
+{% if attributes -%}
+<div{{ attributes }}>
+    {% endif %}
+    {% if title %}
+        <h3 class="new">{{ title }}</h3>
+    {% endif %}
+    <{{ list.type }}>
+    {% for details in node_detail %}
+        <li class="list">
+            <div class="title test"><a href= {{ details.nid }}>{{ details.title }}</a></div>
+            <div class="body">{{ details.body|striptags }}</div>
+        </li>
+    {% endfor %}
+
+</{{ list.type }}>
+
+{% if attributes -%}
+    </div>
+{% endif %}
