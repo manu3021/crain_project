@@ -1,0 +1,22 @@
+.main-callout-wrapper {
+    padding: 35px 0;
+    border-top: 1px solid #d8d8d8;
+    margin: 20px 0;
+    border-bottom: 1px solid #d8d8d8;
+    .field--name-field-title {
+      font-size: 32px;
+      color: #04326C;
+    }
+    .skyblue-text {
+      color: #1DAEEC;
+    }
+    .field--name-field-linkcta {
+      display: block;
+      margin-top: 17px;
+      a {
+        padding: 10px  20px;
+        border: 1px solid #d8d8d8;
+        color: #1DAEEC;
+      }
+    }
+}
