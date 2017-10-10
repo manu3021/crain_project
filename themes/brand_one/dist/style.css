@@ -130,6 +130,7 @@ header, footer, nav, section, article, hgroup, figure {
   display: block;
   margin-top: 15px;
   color: #1DAEEC;
+  cursor: pointer;
 }
 
 .main-callout-wrapper .field--name-field-linkcta a {
