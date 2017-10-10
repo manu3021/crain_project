@@ -129,11 +129,10 @@ header, footer, nav, section, article, hgroup, figure {
 .main-callout-wrapper .field--name-field-linkcta {
   display: block;
   margin-top: 15px;
+  color: #1DAEEC;
 }
 
 .main-callout-wrapper .field--name-field-linkcta a {
-  padding: 10px  20px;
-  border: 1px solid #d8d8d8;
   color: #1DAEEC;
 }
 
