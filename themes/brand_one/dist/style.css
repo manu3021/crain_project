@@ -129,12 +129,12 @@ header, footer, nav, section, article, hgroup, figure {
 .main-callout-wrapper .field--name-field-linkcta {
   display: block;
   margin-top: 15px;
-  color: #1DAEEC;
+  color: red;
   cursor: pointer;
 }
 
 .main-callout-wrapper .field--name-field-linkcta a {
-  color: #1DAEEC;
+  color: red;
 }
 
 /*------------------------------------*    $GLOBAL ELEMENTS
