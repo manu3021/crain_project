@@ -110,6 +110,68 @@ header, footer, nav, section, article, hgroup, figure {
   word-wrap: normal;
 }
 
+.custom-newsletter {
+  padding: .75em;
+  border: 1px solid #ccc;
+  margin: 0 0 1.2em;
+}
+
+.custom-newsletter .main-wrap {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.custom-newsletter input {
+  margin-right: 10px;
+}
+
+.custom-newsletter span {
+  display: block;
+}
+
+.custom-newsletter .title {
+  font-weight: bold;
+}
+
+.custom-newsletter button {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.main-callout-wrapper {
+  padding: 35px 0;
+  border-top: 1px solid #d8d8d8;
+  margin: 20px 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.main-callout-wrapper .field--name-field-title {
+  font-size: 32px;
+  color: #04326C;
+}
+
+.main-callout-wrapper .skyblue-text {
+  color: #1DAEEC;
+}
+
+.main-callout-wrapper .field--name-field-linkcta {
+  display: block;
+  margin-top: 17px;
+}
+
+.main-callout-wrapper .field--name-field-linkcta a {
+  padding: 10px  20px;
+  border: 1px solid #d8d8d8;
+  color: #1DAEEC;
+}
+
+.menu--main .menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+}
+
 /*------------------------------------*    $GLOBAL ELEMENTS
 \*------------------------------------*/
 /*------------------------------------*    $GLOBAL CLASSES
