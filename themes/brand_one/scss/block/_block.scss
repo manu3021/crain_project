@@ -1,0 +1,26 @@
+.custom-newsletter {
+  padding: .75em;
+  border: 1px solid #ccc;
+  margin: 0 0 1.2em;
+
+  .main-wrap {
+    display: flex;
+  }
+
+  input {
+    margin-right: 10px;
+  }
+
+  span {
+    display: block;
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  button {
+    color: #fff;
+    text-transform: uppercase;
+  }
+}

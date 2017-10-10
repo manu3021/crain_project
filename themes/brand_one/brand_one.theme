@@ -1,0 +1,14 @@
+<?php
+function brand_one_preprocess_views_view_list(&$variables) {
+  // Needs to be changed
+  foreach($variables['view']->result as $row) {
+    $nid = $row->nid;
+    $title = db_query("SELECT title FROM node_field_data WHERE nid = :nid", array(':nid' => $nid))->fetchField();
+    $body = db_query("SELECT body_value FROM node__body WHERE entity_id = :nid", array(':nid' => $nid))->fetchField();
+    $variables['node_detail'][$nid]['title'] = $title;
+    $variables['node_detail'][$nid]['body'] = $body;
+    $variables['node_detail'][$nid]['nid'] = $nid;
+  }
+}
+
+

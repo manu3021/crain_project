@@ -1,0 +1,30 @@
+{
+  "title":"Pattern Lab Twig Template",
+  "list": {
+    "type": "ul"
+  },
+  "node_detail": [
+    {
+      "nid": "5",
+      "title":"Where can I get some?",
+      "body":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,"
+    },
+    {
+      "nid": "1",
+      "title":"Where does it come from?",
+      "body":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,"
+    },
+    {
+      "nid": "3",
+      "title":"Why do we use it?",
+      "body":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,"
+    },
+    {
+      "nid": "5",
+      "title":"What is Lorem Ipsum?",
+      "body":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,"
+    }
+    ]
+  }
+
+

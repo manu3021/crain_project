@@ -1,0 +1,40 @@
+{
+  "fields":[{
+    "label": "view headding",
+    "label_element": "label",
+    "label_attributes": "name",
+    "label_suffix": "label_suffix",
+    "separator": "separator",
+    "wrapper_element": "div",
+    "wrapper_attributes": "views-elemement",
+    "element_type": "element_type",
+    "element_attributes": "name view",
+    "content": "dummy data to show on page"
+  },
+  {
+    "label": "view headding",
+    "label_element": "label",
+    "label_attributes": "name",
+    "label_suffix": "label_suffix",
+    "separator": "separator",
+    "wrapper_element": "div",
+    "wrapper_attributes": "views-elemement",
+    "element_type": "element_type",
+    "element_attributes": "name view",
+    "content": "dummy data to show on page"
+  },
+  {
+    "label": "view headding",
+    "label_element": "label",
+    "label_attributes": "name",
+    "label_suffix": "label_suffix",
+    "separator": "separator",
+    "wrapper_element": "div",
+    "wrapper_attributes": "views-elemement",
+    "element_type": "element_type",
+    "element_attributes": "name view",
+    "content": "dummy data to show on page"
+  }
+
+  ]
+}
