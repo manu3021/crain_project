@@ -1,4 +1,4 @@
 #These lines define the brand_one/global library.
 global:
   css:
-    dist/style.css: {}
+    - dist/style.css: {}

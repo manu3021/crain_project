@@ -10,10 +10,6 @@ base theme: classy
 libraries:
   - brand_one/global
 
-css:
-    theme:
-      dist/style.css: {}
-
 # For compatibility with Pattern Lab templates; this list must
 # always be the folders immediately under the `$sourceDir` patterns folder
 # `$sourceDir` = defined in `pattern-lab/config/config.yml` under `sourceDir
@@ -22,4 +18,3 @@ component-libraries:
   myLib:
     paths:
       - pattern-lab/source/_patterns/01-molecules
-
