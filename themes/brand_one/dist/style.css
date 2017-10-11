@@ -1491,4 +1491,51 @@ td {
   background: #ffbebe;
 }
 
+.subscribe-block-main-wrapper {
+  background: #003768;
+  padding: 35px 25px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #fff;
+}
+
+.subscribe-block-main-wrapper .subscribe-title {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  text-align: center;
+  font-size: 33px;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+}
+
+.subscribe-block-main-wrapper .image-col {
+  -ms-flex: 0 0 40%;
+      flex: 0 0 40%;
+  margin-right: 5%;
+}
+
+.subscribe-block-main-wrapper .descp-block {
+  -ms-flex: 0 0 55%;
+      flex: 0 0 55%;
+}
+
+.subscribe-block-main-wrapper .description {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.subscribe-block-main-wrapper .link {
+  background: #d77300;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.subscribe-block-main-wrapper img {
+  padding: 6px;
+}
+
 /*# sourceMappingURL=style.css.map */
